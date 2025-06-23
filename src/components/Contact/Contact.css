@@ -182,14 +182,14 @@
   }
 
   .contact-page-info-section {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 1rem;
+    gap: 30px;
     padding: 1rem;
   }
 
   .contact-page-content {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .contact-page-image {
@@ -212,5 +212,8 @@
 
   .contact-page-form {
     padding: 1rem;
+  }
+  .contact-page-content {
+    flex-direction: column;
   }
 }

@@ -81,12 +81,12 @@ const Contact = () => {
       <Container className="my-5">
         <Row className="contact-page-content g-0">
           {/* Image - visible on all devices now */}
-          <Col md={6} xs={12} className="contact-page-image">
+          <Col md={6} sm={12} className="contact-page-image">
             <img src={contactSidePic} alt="Contact Side" />
           </Col>
 
           {/* Form */}
-          <Col md={6} xs={12} className="contact-page-form">
+          <Col md={6} sm={12} className="contact-page-form">
             <h4 className="mb-3">Contact Us</h4>
             {showSuccess && <Alert variant="success">Message sent!</Alert>}
             <Form onSubmit={handleSubmit}>
@@ -107,7 +107,7 @@ const Contact = () => {
                 <Form.Label>Last Name*</Form.Label>
                 <Form.Control
                   type="text"
-                  id="lastName"
+                  id="lastName"  
                   value={form.lastName}
                   onChange={handleChange}
                   className={`contact-page-input ${errors.lastName ? 'is-invalid' : ''}`}
