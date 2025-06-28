@@ -1,0 +1,456 @@
+
+.about-page-wrapper {
+    background-color:black;
+    color: white;
+    padding: 40px 0;
+    overflow:hidden;
+
+}
+
+.about-page-banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.about-page-banner img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(55%);
+}
+.about-page-banner-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 60px;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    border-left:4px solid white;
+    /* position: relative; */
+}
+
+.about-page-banner-heading::before,
+.about-page-banner-heading::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 30px;
+    border-left: 4px solid white;
+}
+
+.about-page-banner-heading::before {
+    bottom: -4px;
+    right: 0;
+}
+
+.about-page-banner-heading::after {
+    top: -4px;
+    right: 0;
+}
+.about-page-breadcrumb-line {
+
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.row-section1{
+    margin-top: 20px;
+}
+.row-section2{
+    background-color: rgb(38, 57, 126);
+}
+
+.image-section-container{
+  
+}
+
+    .img1 {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+.info-section{
+  padding-right:66.1667px;
+  text-align: justify;
+}
+
+.info-section strong{
+    color:rgb(226, 33, 40);
+    font-family:Poppins, sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+.info-section h2{
+    color:rgb(231, 231, 231);
+    font-family:BerlingskeSerif, sans-serif;
+    font-size:32px;
+}
+.info-section h6{
+    font-family:Poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color:rgb(192, 191, 191);
+    text-size-adjust: 100%;
+    
+}
+
+.why-choose-container {
+  background-color: #232222;
+}
+
+.why-choose-text-col {
+  padding: 20px;
+  text-align:justify;
+}
+
+.why-choose-features-col {
+  padding: 20px;
+}
+
+.section-description{
+  font-size:20px;
+  line-height:1.3;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature-col {
+  padding: 15px;
+}
+
+
+
+
+
+.feature-box {
+  background: linear-gradient(135deg, black, #2f2e2e,black);
+  color: #fff;
+  width: 100%;
+  max-width: 180px;
+  aspect-ratio: 1/1; 
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  border-radius: 12px;
+  padding: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.feature-box:hover {
+  
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.3);
+}
+.inner-box-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 100%;
+  
+  transition: transform 0.3s ease-in-out;
+}
+ .inner-box-content:hover {
+  transform: scale(1.3);
+}
+
+
+.statement-mission-vision{
+  color:rgb(205, 206, 210);
+  font-size:45px;
+  font-family: BerlingskeSerif, sans-serif;
+
+}
+.individual-icon{
+  width:100px;
+  padding:20px;
+filter: invert(1);
+  
+}
+.mission-card {
+  text-align: center;
+  padding: 20px;
+}
+
+.mission-card p {
+  margin-top: 10px;
+  color: #b6b4b4;
+}
+.mission-card strong{
+  color:rgb(225, 225, 225);
+  font-size:20px;
+  border:1px solid white;
+  border-radius:5px;
+  padding:5px 10px;
+} 
+
+.mission-section {
+  position: relative;
+}
+
+.mission-col {
+  position: relative;
+}
+
+.mission-divider::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: 0;
+  height: 80%;
+  width: 1px;
+  background-color:#ccc;
+
+}
+.enquiry-section{
+  background-color: #232222;
+  width:100%;
+  height:180px;
+  display: flex;
+  padding:0 50px;
+  justify-content:space-between;
+  align-items: center;
+}
+.enquiry-section-text h4{
+  color:white;
+  font-size: 35px;
+  font-family: BerlingskeSerif, sans-serif;
+}
+
+.enquiry-section-text p{
+  color:white;
+  font-size: 20px;
+  font-family: Poppins, sans-serif;
+}
+.enquiry-section-button button{
+  border:2px solid white;
+  font-size: 18px;
+  background-color: #232222;
+  color:white;
+  padding:9px 38px;
+  font-weight: 600;
+  transition: background-color 1s;
+}
+.enquiry-section-button button:hover{
+  background-color:white;
+  color:#232222;
+}
+
+@media (max-width: 480px) {
+   .img1 {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin:0 -6px;
+    padding:0 15px
+  }
+  .about-page-banner {
+    height: 180px;
+  }
+  .about-page-banner-heading
+  {
+    font-size: 1.5rem;
+  }
+  .about-page-breadcrumb-line {
+        font-size: 10px;
+        font-weight: 600;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+}
+.info-section{
+  padding-left: 20px;
+  padding-right: 10px;
+}
+.info-section strong{
+
+    font-size: 14px;
+}
+.info-section h2{
+    font-size:24px;
+}
+.info-section h6,.section-description{
+
+    font-size: 16px;   
+}
+.why-choose-row{
+  padding: 0 0 !important;
+  font-size: 20px;
+}
+.section-label
+{
+  font-size:20px !important;
+}
+.section-title
+{
+  font-size:30px !important;
+}
+.feature-col
+{
+  padding:10px;
+
+}
+.feature-box {
+    width: 100%;
+    max-width: 70%;
+    margin: 10px auto;
+  }
+.why-choose-features-col{
+  padding:1px 2px;
+}
+.features-grid
+{
+  margin:0px 20px !important;
+}
+.statement-mission-vision
+{
+  font-size:24px;
+}
+.enquiry-section{
+  display:block;
+  padding:30px 30px;
+}
+.enquiry-section-text h4{
+  font-size: 20px;
+}
+.enquiry-section-text p{
+  font-size:14px;
+}
+}
+@media (min-width: 577px) and (max-width: 991px) {
+  .about-page-banner {
+    height: 240px;
+  }
+
+  .about-page-banner-heading {
+    font-size: 2.2rem;
+    padding: 30px 40px;
+  }
+
+  .about-page-breadcrumb-line {
+    font-size: 12px;
+    gap: 6px;
+  }
+
+  .img1 {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin:0 10px;
+  }
+
+  .info-section {
+    padding: 0 30px;
+  }
+
+  .info-section strong {
+    font-size: 16px;
+  }
+
+  .info-section h2 {
+    font-size: 28px;
+  }
+
+  .info-section h6,
+  .section-description {
+    font-size: 18px;
+  }
+
+  .why-choose-row {
+    padding: 0 15px;
+    font-size: 20px;
+  }
+
+  .section-label {
+    font-size: 22px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .why-choose-features-col {
+    padding: 10px 20px;
+  }
+
+  .feature-col {
+    padding: 15px;
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .feature-box {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px auto;
+  }
+
+  .features-grid {
+    margin: 0 10px !important;
+  }
+
+  .statement-mission-vision {
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  .mission-divider::after {
+    display: none;
+  }
+
+  .mission-card p {
+    font-size: 16px;
+  }
+
+  .mission-card strong {
+    font-size: 18px;
+  }
+
+  .enquiry-section {
+    display: block;
+    padding: 26px 30px;
+    text-align: center;
+  }
+
+  .enquiry-section-text h4 {
+    font-size: 22px;
+  }
+
+  .enquiry-section-text p {
+    font-size: 16px;
+  }
+
+  .enquiry-section-button button {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px 20px;
+  }
+}

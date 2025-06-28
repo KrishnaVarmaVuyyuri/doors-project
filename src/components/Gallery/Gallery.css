@@ -13,6 +13,7 @@
 }
 
 .gallery-page-banner img {
+    position: relative;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -28,6 +29,40 @@
     font-weight: 600;
     color: #ffffff;
     text-align: center;
+    padding: 40px 60px;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    border-left:4px solid white;
+    /* position: relative; */
+}
+
+.gallery-page-banner-heading::before,
+.gallery-page-banner-heading::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 30px;
+    border-left: 4px solid white;
+}
+
+.gallery-page-banner-heading::before {
+    bottom: -4px;
+    right: 0;
+}
+
+.gallery-page-banner-heading::after {
+    top: -4px;
+    right: 0;
+}
+.gallery-page-breadcrumb-line {
+
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
 }
 
 .gallery-floating-section {
@@ -43,14 +78,15 @@
     left: 0;
     right: 0;
     /* border-bottom: 1px solid white; */
-    box-shadow: 0 0 50px 1px gray inset;
+    box-shadow: 0 0 50px 1px darkgray inset;
     height: 400px;
     background-color: #000;
     z-index: 1;
 }
-.gallery-para-section{
-    padding-left: 170px;
-    padding-right: 170px;
+
+.gallery-para-section {
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 .gallery-image-grid-wrapper {
@@ -59,7 +95,7 @@
     margin-top: 97px;
     /* Pull up over the orange */
     background: transparent;
-    padding: 40px 20px;
+    padding: 9px 20px;
     border-radius: 16px;
     justify-content: center;
     max-width: 900px;
@@ -76,7 +112,7 @@
 .image-box img {
     width: 250px;
     height: 250px;
-    background-image: linear-gradient(white, lightgray, gray, black);
+    background-image:radial-gradient(ellipse at center, rgba(255,255,255,0.6) 0%, rgba(200,200,200,0.3) 60%, rgba(0,0,0,0.1) 100%);
     transition: transform 0.3s;
 }
 
@@ -89,7 +125,8 @@
     margin-top: 30px;
 }
 
-.view-more-button button {
+.view-more-button button
+{
     background-color: #000;
     color: white;
     padding: 12px 30px;
@@ -101,13 +138,13 @@
     transition: background-color 0.3s ease;
 }
 
-    
-.image-box {
+
+.image-box
+{
     display: flex;
     flex-direction: column;
     align-items: center;
     background: #1a1a1a;
-    /* border-radius: 12px; */
     overflow: hidden;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
@@ -132,23 +169,69 @@
 }
 
 @media (max-width: 991px) {
+    .gallery-page-banner {
+    height: 240px;
+  }
+
+  .gallery-page-banner-heading {
+    font-size: 2rem;
+  }
     .image-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 80px;
+        gap: 50px;
     }
-    .gallery-image-grid-wrapper
-    {
-        padding: 40px 80px;
+
+    .gallery-image-grid-wrapper {
+
+        padding-bottom: 60px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-top: 75px;
     }
-    
+    .gallery-para-section {
+        padding-left: 60px;
+        padding-right: 60px;
+        font-size: 14px;
+    }
+
 }
 
-@media (max-width: 576px) {
-    .image-grid {
-        grid-template-columns: repeat(1, 1fr);
+@media (max-width: 480px) {
+    .gallery-page-banner {
+    height: 180px;
+  }
+  .gallery-page-banner-heading
+  {
+    font-size: 1.5rem;
+  }
+       .image-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+    .gallery-image-grid-wrapper {
+        padding-top: 30px;
+        padding-bottom: 60px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
-    .gallery-image-grid-wrapper
-    {
-        padding: 40px 80px;
+
+    .gallery-para-section {
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 10px;
     }
+
+    .gallery-orange-bg {
+        height: 212px;
+    }
+    .gallery-page-breadcrumb-line {
+        font-size: 10px;
+        font-weight: 600;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+}
 }

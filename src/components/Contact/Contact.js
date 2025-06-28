@@ -3,9 +3,12 @@ import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
 import contactBanner from '../../assests/contact-page-banner.jpg';
 import contactSidePic from '../../assests/contact-side-pic.jpg';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import { AiFillHome } from 'react-icons/ai';
 import './Contact.css';
+import { useNavigate } from 'react-router-dom';
 
 const Contact = () => {
+  const navigate = useNavigate();
   const [form, setForm] = useState({
     firstName: '',
     lastName: '',
@@ -56,7 +59,15 @@ const Contact = () => {
       {/* Banner */}
       <div className="contact-page-banner">
         <img src={contactBanner} alt="Contact Banner" />
-        <div className="contact-page-banner-heading">Contact Us</div>
+        <div className="contact-page-banner-heading">Contact
+          <div className="contact-page-breadcrumb-line">
+              <AiFillHome
+                        className="home-icon"
+                        onClick={() => navigate("/")}
+                        style={{ cursor: "pointer" }}
+                      /> / <span>Contact Us</span>
+            </div>
+        </div>
       </div>
 
       {/* Contact Info Icons */}
